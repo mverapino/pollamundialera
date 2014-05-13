@@ -11,7 +11,9 @@ class UsersController < ApplicationController
     @bets = Match.all.order(:time).map {|a| [a, current_user.bets.where(match:a).first.nil? ? Bet.new(match:a, user:current_user) : current_user.bets.where(match:a).first]}
     we=2
   end
-
+  def index
+    @users = User.all
+  end
   # GET /users/1
   # GET /users/1.json
   def show
