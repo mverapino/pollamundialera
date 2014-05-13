@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails worldcup: staging" uuid="69ab1a41-6b80-4e9d-b341-c656f59c1190">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails worldcup: development" uuid="e4bafaad-2c47-4cc7-9bcc-9c775b9d6525">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails worldcup: test" uuid="9b0e58af-3898-4d1d-99e6-083755a15b7a">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails worldcup: production" uuid="a17e5a46-991e-4ccc-a023-779cdb52cbbf">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

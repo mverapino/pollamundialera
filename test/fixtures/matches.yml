@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  local: 1
+  visit: 1
+  local_score: 1
+  local_visit: 1
+
+two:
+  local: 1
+  visit: 1
+  local_score: 1
+  local_visit: 1

@@ -1,0 +1,67 @@
+<div class="row clearfix">
+  <div class="col-md-12 column">
+    <p id="notice"><%= notice %></p>
+    <h2>Responde las preguntas</h2>
+    <%  @questions.each do |q|%>
+      <div class="row clearfix">
+        <%= form_for q[1],html:{class:'form-horizontal',role:'form'} do |a|%>
+          <div class="form-group">
+            <!--<div class="col-md-6 column">-->
+              <%= a.label(:answer, q[0].question,class:'control-label col-md-4 col-sm-4 col-xs-4') %>
+            <!--</div>-->
+              <div class="col-md-4 col-sm-4 col-xs-4 column">
+                <% if q[0].question_type == 1 %>
+                  <%= a.select(:answer, options_for_select(select_team_options(nil), q[1].answer), class:'form-control') %>
+                <% elsif q[0].question_type == 2%>
+                  <%= a.text_field(:answer, class:'form-control') %>
+                <% elsif q[0].question_type == 3%>
+                  <%= a.select(:answer, options_for_select(select_team_options('CHILE'), q[1].answer), class:'form-control') %>
+                <% else%>
+                  <%= a.select(:answer, options_for_select(select_team_options(q[0].group), q[1].answer), class:'form-control') %>
+                <% end  %>
+                <!--<%= a.text_field(:answer, class:'form-control') %>-->
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 column">
+                <%= a.hidden_field(:prediction_id) %>
+                <%= a.submit('Guardar',class:'btn btn.default') %>
+              </div>
+          </div>
+
+        <% end %>
+      </div>
+    <% end  %>
+  </div>
+</div>
+<div class="row clearfix">
+  <div class="col-md-12 column">
+    <h2>Apuesta a los resultados</h2>
+    <%  @bets.each do |q|%>
+      <div class="row clearfix">
+        <%= form_for q[1],html:{class:'form-horizontal',role:'form'} do |a|%>
+          <div class="form-group">
+            <!--<div class="col-md-6 column">-->
+            <%= a.label(:time, q[0].time,class:'control-label col-md-2 col-sm-2 col-xs-2') %>
+            <%= a.label(:local, q[0].local.name,class:'control-label col-md-2 col-sm-2 col-xs-2') %>
+            <!--</div>-->
+            <div class="col-md-2 col-sm-2 col-xs-2 column">
+
+              <%= a.number_field(:local_score, class:'form-control',min:'0') %>
+            </div>
+            <%= a.label(:visit, q[0].visit.name,class:'control-label col-md-2  col-sm-2 col-xs-2 ') %>
+            <div class="col-md-2  col-sm-2 col-xs-2 column">
+
+              <%= a.number_field(:visit_score, class:'form-control',min:'0') %>
+            </div>
+
+            <div class="col-md-2  col-sm-2 col-xs-2 column">
+              <%= a.hidden_field(:match_id) %>
+              <%= a.submit('Guardar',class:'btn btn.default') %>
+            </div>
+          </div>
+
+        <% end %>
+      </div>
+    <% end  %>
+
+  </div>
+</div>
