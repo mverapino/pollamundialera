@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20140511190949) do
   create_table "answers", force: true do |t|
     t.integer  "user_id"
     t.integer  "prediction_id"
-    t.string   "answer"
+    t.string   "answer",        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,10 +28,10 @@ ActiveRecord::Schema.define(version: 20140511190949) do
   add_index "answers", ["user_id"], name: "index_answers_on_user_id", using: :btree
 
   create_table "bets", force: true do |t|
-    t.integer  "match_id"
-    t.integer  "user_id"
-    t.integer  "local_score"
-    t.integer  "visit_score"
+    t.integer  "match_id",    null: false
+    t.integer  "user_id",     null: false
+    t.integer  "local_score", null: false
+    t.integer  "visit_score", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

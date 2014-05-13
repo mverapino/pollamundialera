@@ -1,11 +1,13 @@
 class AnswersController < ApplicationController
-  before_action :set_answer, only: [:show, :edit, :update, :destroy]
+
+  before_action :authenticate_user!
+  before_action :set_answer, only: [:show, :edit, :update]
 
   # GET /answers
   # GET /answers.json
-  def index
-    @answers = Answer.all
-  end
+  #def index
+  #  @answers = Answer.all
+  #end
 
   # GET /answers/1
   # GET /answers/1.json
@@ -28,11 +30,11 @@ class AnswersController < ApplicationController
     @answer.user=current_user
     respond_to do |format|
       if @answer.save
-        format.html { redirect_to @answer, notice: 'Answer was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @answer }
+        format.html { redirect_to play_path, notice: 'Respuesta guardada'}
+        #format.json { render action: 'show', status: :created, location: @answer }
       else
-        format.html { render action: 'new' }
-        format.json { render json: @answer.errors, status: :unprocessable_entity }
+        format.html { redirect_to play_path, error: 'Respuesta no se pudo guardar' }
+        #format.json { render json: @answer.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -42,24 +44,24 @@ class AnswersController < ApplicationController
   def update
     respond_to do |format|
       if @answer.update(answer_params)
-        format.html { redirect_to play_path, notice: 'Answer was successfully updated.' }
-        format.json { head :no_content }
+        format.html { redirect_to play_path, notice: 'Respuesta actualizada: ' + 2.to_s }
+        #format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @answer.errors, status: :unprocessable_entity }
+        format.html { redirect_to play_path, error: 'Respuesta no se pudo guardar'}
+        #format.json { render json: @answer.errors, status: :unprocessable_entity }
       end
     end
   end
 
   # DELETE /answers/1
   # DELETE /answers/1.json
-  def destroy
-    @answer.destroy
-    respond_to do |format|
-      format.html { redirect_to answers_url }
-      format.json { head :no_content }
-    end
-  end
+  #def destroy
+  #  @answer.destroy
+  #  respond_to do |format|
+  #    format.html { redirect_to answers_url }
+  #    format.json { head :no_content }
+  #  end
+  #end
 
   private
     # Use callbacks to share common setup or constraints between actions.
