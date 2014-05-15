@@ -77,5 +77,5 @@ Match.create!(local: Team.find_by(name:'Francia'), visit:Team.find_by(name:'Hond
 Match.create!(local: Team.find_by(name:'Argentina'), visit:Team.find_by(name:'Bosnia'),       time:DateTime.new(2014,6,15,19))
 
 
-User.create!(email: 'mverapino@gmail.com', password:'alejandro5', name: 'Mauricio Vera') #.confirm!
+User.create!(email: 'mverapino@gmail.com', password:'qwertyuiop', name: 'Mauricio Vera') #.confirm!
 User.create!(email: 'testing@gmail.com',password:'testing1', name: 'Test') #.confirm!
