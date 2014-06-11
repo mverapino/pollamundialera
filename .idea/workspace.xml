@@ -44,12 +44,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="play.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="play.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/play.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="193" selection-end="193" vertical-scroll-proportion="0.18429004" vertical-offset="44" max-vertical-offset="855">
+            <state line="7" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="-2.5416667" vertical-offset="44" max-vertical-offset="855">
               <folding>
-                <element signature="e#254#1894#0" expanded="false" />
+                <element signature="e#250#1890#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -91,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="61" selection-start="5174" selection-end="5174" vertical-scroll-proportion="8.145454" vertical-offset="1543" max-vertical-offset="1830">
+            <state line="114" column="0" selection-start="10158" selection-end="10158" vertical-scroll-proportion="0.68641114" vertical-offset="1513" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -159,7 +159,6 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/bet.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/models/answer.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
@@ -167,6 +166,7 @@
         <option value="$PROJECT_DIR$/app/controllers/predictions_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/answers_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/play.html.erb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -837,23 +837,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="61" selection-start="5174" selection-end="5174" vertical-scroll-proportion="8.145454" vertical-offset="1543" max-vertical-offset="1830">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/answer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="30" selection-start="245" selection-end="245" vertical-scroll-proportion="0.3802817" vertical-offset="0" max-vertical-offset="355">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/bets_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="94" selection-start="995" selection-end="995" vertical-scroll-proportion="-10.384615" vertical-offset="165" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
@@ -881,10 +867,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/play.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="193" selection-end="193" vertical-scroll-proportion="0.18429004" vertical-offset="44" max-vertical-offset="855">
+        <state line="7" column="0" selection-start="189" selection-end="189" vertical-scroll-proportion="-2.5416667" vertical-offset="44" max-vertical-offset="855">
           <folding>
-            <element signature="e#254#1894#0" expanded="false" />
+            <element signature="e#250#1890#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/bets_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="94" selection-start="995" selection-end="995" vertical-scroll-proportion="-10.384615" vertical-offset="165" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="0" selection-start="10158" selection-end="10158" vertical-scroll-proportion="0.68641114" vertical-offset="1513" max-vertical-offset="1800">
+          <folding />
         </state>
       </provider>
     </entry>

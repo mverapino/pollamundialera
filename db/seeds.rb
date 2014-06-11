@@ -112,6 +112,3 @@ Match.create!(local: Team.find_by(name:'Portugal'), visit:Team.find_by(name:'Gha
 Match.create!(local: Team.find_by(name:'USA'), visit:Team.find_by(name:'Alemania'),           time:Time.new(2014,6,26,13))
 Match.create!(local: Team.find_by(name:'Korea del Sur'), visit:Team.find_by(name:'Belgica'),  time:Time.new(2014,6,26,17))
 Match.create!(local: Team.find_by(name:'Algeria'), visit:Team.find_by(name:'Rusia'),          time:Time.new(2014,6,26,17))
-
-User.create!(email: 'mverapino@gmail.com', password:'qwertyuiop', name: 'Mauricio Vera') #.confirm!
-User.create!(email: 'testing@gmail.com',password:'testing1', name: 'Test') #.confirm!
