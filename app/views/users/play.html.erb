@@ -5,6 +5,7 @@
         <%= value %>
       </div>
     <% end %>
+    
     <h2>Responde las preguntas</h2>
     <%  @questions.each do |q|%>
       <div class="row clearfix">
@@ -65,7 +66,13 @@
 
             <div class="col-md-2  col-sm-2 col-xs-2 column">
               <%= a.hidden_field(:match_id) %>
-              <%= a.submit('Guardar',class:'btn btn.default') %>
+              <%if q[1].new_record?  %>
+                  <%= a.submit('Guardar',class:'btn btn.default')%>
+              <% else  %>
+                  <%= a.submit('Actualizar',class:'btn btn.default')%>
+                  <span class="glyphicon glyphicon-ok"></span>
+
+              <% end %>
             </div>
           </div>
 
