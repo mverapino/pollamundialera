@@ -16,7 +16,19 @@
             <%= q[0].question %>
           </td>
           <td>
-            <%= q[1].nil? ? '-' : q[1].answer %>
+            <% if q[1].nil?%>
+            -
+            <% else %>
+                <% if q[0].question_type == 1 %>
+                    <%= Team.find(q[1].answer.to_i).name%>
+                <% elsif q[0].question_type == 2%>
+                    <%= q[1].answer%>
+                <% elsif q[0].question_type == 3%>
+                    <%= q[1].answer%>
+                <% else%>
+                    <%= Team.find(q[1].answer.to_i).name%>
+                <% end  %>
+            <% end %>
           </td>
         </tr>
       <%end  %>
