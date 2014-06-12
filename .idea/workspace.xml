@@ -90,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="89" selection-start="941" selection-end="941" vertical-scroll-proportion="0.6121212" vertical-offset="383" max-vertical-offset="795">
+            <state line="39" column="89" selection-start="941" selection-end="941" vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -108,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="81" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="1185">
+            <state line="11" column="4" selection-start="757" selection-end="757" vertical-scroll-proportion="0.48387095" vertical-offset="0" max-vertical-offset="1185">
               <folding />
             </state>
           </provider>
@@ -169,8 +169,8 @@
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/users_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/users/play.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -893,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="81" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/play.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="43" selection-start="542" selection-end="555" vertical-scroll-proportion="21.25" vertical-offset="735" max-vertical-offset="1365">
@@ -923,7 +916,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="89" selection-start="941" selection-end="941" vertical-scroll-proportion="0.6121212" vertical-offset="383" max-vertical-offset="795">
+        <state line="39" column="89" selection-start="941" selection-end="941" vertical-scroll-proportion="-24.375" vertical-offset="0" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="4" selection-start="757" selection-end="757" vertical-scroll-proportion="0.48387095" vertical-offset="0" max-vertical-offset="1185">
           <folding />
         </state>
       </provider>

@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     #@questions = Prediction.all.order(:id).map {|a| [a, current_user.answers.where(prediction_id: a).first]}
     @questions = Prediction.all.order(:id).map {|a| [a, current_user.answers.where(prediction_id: a).first.nil? ? Answer.new(prediction:a,user:current_user) : current_user.answers.where(prediction_id: a).first]}
     @bets = Match.all.order(:time).map {|a| [a, current_user.bets.where(match:a).first.nil? ? Bet.new(match:a, user:current_user) : current_user.bets.where(match:a).first]}
-    we=2
+    
   end
   def index
     @users = User.all
@@ -17,8 +17,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    @questions = Prediction.all.order(:id).map {|a| [a, current_user.answers.where(prediction_id: a).first.nil? ? nil : current_user.answers.where(prediction_id: a).first]}
-    @bets = Match.all.order(:time).map {|a| [a, current_user.bets.where(match:a).first.nil? ? nil : current_user.bets.where(match:a).first]}
+    @questions = Prediction.all.order(:id).map {|a| [a, @user.answers.where(prediction_id: a).first.nil? ? nil : @user.answers.where(prediction_id: a).first]}
+    @bets = Match.all.order(:time).map {|a| [a, @user.bets.where(match:a).first.nil? ? nil : @user.bets.where(match:a).first]}
     we=2
   end
 
@@ -46,6 +46,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+    @user=current_user
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
@@ -63,7 +64,6 @@ class UsersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
-      @user = current_user
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
