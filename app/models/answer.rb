@@ -7,7 +7,7 @@ class Answer < ActiveRecord::Base
      t.empty? ? self.answer: t.name
   end
   def check_time
-    Time.new(2014,06,12,12) > Time.now
+    Time.new(2014,06,12,0) > Time.now
   end
   def points
     if self.prediction.question_type ==1
