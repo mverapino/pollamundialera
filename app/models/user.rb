@@ -13,4 +13,10 @@ class User < ActiveRecord::Base
   #     Answer.create!(prediction:p, user:self)
   #   end
   #end
+  def total_points
+    sum = 0
+    self.bets.each { |b| sum+=b.points }
+    self.answers.each { |a| sum+=a.points }
+    sum
+  end
 end

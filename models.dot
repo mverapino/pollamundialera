@@ -1,0 +1,14 @@
+digraph models_diagram {
+	graph[overlap=false, splines=true]
+	"Answer" [shape=Mrecord, label="{Answer|id :integer\luser_id :integer\lprediction_id :integer\lanswer :string\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Bet" [shape=Mrecord, label="{Bet|id :integer\lmatch_id :integer\luser_id :integer\llocal_score :integer\lvisit_score :integer\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Match" [shape=Mrecord, label="{Match|id :integer\llocal :integer\lvisit :integer\ltime :datetime\llocal_score :integer\llocal_visit :integer\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Prediction" [shape=Mrecord, label="{Prediction|id :integer\lquestion :string\lanswer :string\lquestion_type :integer\lgroup :string\lpoints :integer\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Team" [shape=Mrecord, label="{Team|id :integer\lname :string\lgroup :string\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"User" [shape=Mrecord, label="{User|id :integer\lname :string\lpaid :boolean\lcreated_at :datetime\lupdated_at :datetime\lemail :string\lencrypted_password :string\lreset_password_token :string\lreset_password_sent_at :datetime\lremember_created_at :datetime\lsign_in_count :integer\lcurrent_sign_in_at :datetime\llast_sign_in_at :datetime\lcurrent_sign_in_ip :string\llast_sign_in_ip :string\l}"]
+	"Match" -> "Bet" [arrowtail=odot, arrowhead=crow, dir=both color="#A5A5C6"]
+	"Prediction" -> "Answer" [arrowtail=odot, arrowhead=crow, dir=both color="#ADE581"]
+	"Team" -> "Match" [arrowtail=odot, arrowhead=crow, dir=both color="#D87F22"]
+	"User" -> "Answer" [arrowtail=odot, arrowhead=crow, dir=both color="#F30512"]
+	"User" -> "Bet" [arrowtail=odot, arrowhead=crow, dir=both color="#822B19"]
+}
