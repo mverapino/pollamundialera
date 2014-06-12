@@ -1,13 +1,7 @@
 Worldcup::Application.routes.draw do
-  resources :answers
-
-  resources :bets
-
-  resources :matches
-
-  resources :predictions
-
-  resources :teams
+  #resources :answers
+  #
+  #resources :bet
 
   devise_for :users
   resources :users
@@ -19,6 +13,12 @@ Worldcup::Application.routes.draw do
   root 'static_pages#home'
   get 'play' => 'users'
   get 'ranking'=> 'users#index'
+
+  post 'answers'=> 'answers#create'
+  put 'answers/:id' => 'answers#update'
+  post 'bets'=> 'bets#create'
+  put 'bets/:id' => 'bets#update'
+  get 'bet' =>'bet#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
