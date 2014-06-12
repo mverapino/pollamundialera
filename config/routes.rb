@@ -1,7 +1,7 @@
 Worldcup::Application.routes.draw do
   resources :answers
   #
-  resources :bet
+  resources :bets
 
   devise_for :users
   resources :users
