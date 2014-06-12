@@ -12,7 +12,8 @@
         <%= form_for q[1],html:{class:'form-horizontal',role:'form'} do |a|%>
           <div class="form-group">
             <!--<div class="col-md-6 column">-->
-              <%= a.label(:answer, q[0].question,class:'control-label col-md-4 col-sm-4 col-xs-4') %>
+            <%p= ' - '+q[0].points.to_s + ' Pts'  %>
+              <%= a.label(:answer, q[0].question+p,class:'control-label col-md-4 col-sm-4 col-xs-4') %>
             <!--</div>-->
               <div class="col-md-4 col-sm-4 col-xs-4 column">
                 <% if q[0].question_type == 1 %>

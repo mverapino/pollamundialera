@@ -17,6 +17,9 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @questions = Prediction.all.order(:id).map {|a| [a, current_user.answers.where(prediction_id: a).first.nil? ? nil : current_user.answers.where(prediction_id: a).first]}
+    @bets = Match.all.order(:time).map {|a| [a, current_user.bets.where(match:a).first.nil? ? nil : current_user.bets.where(match:a).first]}
+    we=2
   end
 
   # GET /users/new

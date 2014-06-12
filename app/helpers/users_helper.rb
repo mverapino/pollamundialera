@@ -54,6 +54,7 @@ module UsersHelper
       ['Tercero en el grupo'],
       ['Octavos de final'],
       ['Cuartos de final'],
+      ['Cuarto'],
       ['Tercero'],
       ['Subcampeón'],
       ['Campeón']]

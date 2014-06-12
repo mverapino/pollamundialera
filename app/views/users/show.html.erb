@@ -1,1 +1,47 @@
 <p id="notice"><%= notice %></p>
+<div class="row clearfix">
+  <div class="col-md-6 column">
+    <h1>Respuestas</h1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Pregunta</th>
+        <th>Respuesta</th>
+      </tr>
+      </thead>
+      <tbody>
+      <%  @questions.each do |q|%>
+        <tr>
+          <td>
+            <%= q[0].question %>
+          </td>
+          <td>
+            <%= q[1].nil? ? '-' : q[1].answer %>
+          </td>
+        </tr>
+      <%end  %>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-6 column">
+    <h1>Respuestas</h1>
+    <table class="table">
+      <thead>
+      <th>Partido</th>
+      <th>Apuesta</th>
+      </thead>
+      <tbody>
+      <%  @bets.each do |b|%>
+          <tr>
+            <td>
+              <%= b[0].local.name + ' VS ' + b[0].visit.name %>
+            </td>
+            <td>
+              <%= b[1].nil? ? '-' : b[1].local_score.to_s + ' - ' + b[1].visit_score.to_s%>
+            </td>
+          </tr>
+      <%end  %>
+      </tbody>
+    </table>
+  </div>
+</div>
