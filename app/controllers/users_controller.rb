@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   end
   def index
-    @users = User.all
+    @users = User.all.sort_by {|u| u.total_points }.reverse
   end
   # GET /users/1
   # GET /users/1.json
