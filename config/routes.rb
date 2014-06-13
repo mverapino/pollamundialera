@@ -13,6 +13,7 @@ Worldcup::Application.routes.draw do
   root 'static_pages#home'
   get 'play' => 'users'
   get 'ranking'=> 'users#index'
+  get 'next_bets' => 'bets#next_bets'
 
   #post 'answers'=> 'answers#create'
   #put 'answers/:id' => 'answers#update'

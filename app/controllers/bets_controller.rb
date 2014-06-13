@@ -2,7 +2,14 @@ class BetsController < ApplicationController
   before_action :set_bet, only: [:show, :update]
   before_action :authenticate_user!
 
+  def next_bets
+    @match=Match.where("time > ?", (Time.now - 3600*2)).first
+    @local = Team.find(@match.local.id)
+    @visit = Team.find(@match.visit.id)
+    @users= User.all.map{|u| [u,u.bets.where(match:@match).first.nil? ?  Bet.new(match:@match, user:u) : u.bets.where(match:@match).first]}
+    @bets=Bet.where(match_id: @match.id)
 
+  end
   # POST /bets
   # POST /bets.json
   def create

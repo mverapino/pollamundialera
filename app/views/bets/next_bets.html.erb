@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h1>Proximo Partido</h1>
+      <h2><%= @local.name + ' - ' + @visit.name %>   </h2>
+
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Resultado</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @users.each do |user| %>
+            <tr>
+              <td><%= user[0].name %></td>
+              <td><%=  user[1].local_score.to_s + ' - ' + user[1].visit_score.to_s %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+
+      <br>
+
+    </div>
+  </div>
+</div>
