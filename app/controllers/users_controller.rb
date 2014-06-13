@@ -7,8 +7,8 @@ class UsersController < ApplicationController
   def play
     #@predictions = Prediction.all.order(:id)
     #@questions = Prediction.all.order(:id).map {|a| [a, current_user.answers.where(prediction_id: a).first]}
-    @questions = Prediction.all.order(:id).map {|a| [a, current_user.answers.where(prediction_id: a).first.nil? ? Answer.new(prediction:a,user:current_user) : current_user.answers.where(prediction_id: a).first]}
-    @bets = Match.all.order(:time).map {|a| [a, current_user.bets.where(match:a).first.nil? ? Bet.new(match:a, user:current_user) : current_user.bets.where(match:a).first]}
+    @questions =[]# Prediction.all.order(:id).map {|a| [a, current_user.answers.where(prediction_id: a).first.nil? ? Answer.new(prediction:a,user:current_user) : current_user.answers.where(prediction_id: a).first]}
+    @bets = Match.where("time > ?", Time.now ).order(:time).map {|a| [a, current_user.bets.where(match:a).first.nil? ? Bet.new(match:a, user:current_user) : current_user.bets.where(match:a).first]}
 
   end
   def index

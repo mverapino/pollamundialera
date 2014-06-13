@@ -7,6 +7,7 @@
     <% end %>
 
     <h2>Responde las preguntas</h2>
+    <p>Se cerraron las respuestas</p>
     <%  @questions.each do |q|%>
       <div class="row clearfix">
         <%= form_for q[1],html:{class:'form-horizontal',role:'form'} do |a|%>
