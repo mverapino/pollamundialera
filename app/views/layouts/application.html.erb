@@ -30,9 +30,12 @@
             <li class="<%= is_active('next_bets')%>">
               <%= link_to 'Proximas Apuestas',next_bets_path %>
             </li>
-            <li class="<%= is_active('resultados')%>">
-              <a href="#">Resultados</a>
+            <li class="<%= is_active('all_bets')%>">
+              <%= link_to 'Todas las apuestas',all_bets_path %>
             </li>
+            <!--<li class="<%= is_active('resultados')%>">-->
+              <!--<a href="#">Resultados</a>-->
+            <!--</li>-->
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>

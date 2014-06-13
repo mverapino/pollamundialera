@@ -10,6 +10,10 @@ class BetsController < ApplicationController
     @bets=Bet.where(match_id: @match.id)
 
   end
+  def all_bets
+  @users= User.all
+
+  end
   # POST /bets
   # POST /bets.json
   def create
