@@ -1,40 +1,42 @@
-<p id="notice"><%= notice %></p>
-<div class="row clearfix">
-  <div class="col-md-6 column">
-    <h1>Todas las Apuestas</h1>
-  </div>
-</div>
-<div class="row clearfix">
-  <div class="col-md-12 column">
-    <h2>Respuestas</h2>
-    <table class="table">
-      <thead>
-      <tr>
-        <th>Nombre</th>
+<div class="container-fluid">
+    <div class="row clearfix">
+      <div class="col-md-6 column">
+        <h1>Todas las Apuestas</h1>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <div class="col-md-12 column">
+        <h2>Respuestas</h2>
+        <table class="table table-responsive">
+          <thead>
+          <tr>
+            <th>Nombre</th>
 
-        <% Match.all.order(:id).each do |m| %>
-            <th><p><%= Team.find(m.local).name %></p>
-              <p> vs</p>
-              <p><%= Team.find(m.visit).name %>  </p> </th>
-        <%end  %>
-        <th>Respuesta</th>
-      </tr>
-      </thead>
-      <tbody>
-      <%@users.each do|u|  %>
-      <tr>
-        <td>
-          <%=  u.name%>
-        </td>
-        <% Bet.where(user:u).order(:match_id).each do|b| %>
-            <td><%= b.local_score.to_s + ' - ' +  b.visit_score.to_s %></td>
-        <%end  %>
-      </tr>
+            <% Match.all.order(:id).each do |m| %>
+                <th><p><%= Team.find(m.local).name %></p>
+                  <p> vs</p>
+                  <p><%= Team.find(m.visit).name %>  </p> </th>
+            <%end  %>
+            <th>Respuesta</th>
+          </tr>
+          </thead>
+          <tbody>
+          <%@users.each do|u|  %>
+          <tr>
+            <td>
+              <%=  u.name%>
+            </td>
+            <% Bet.where(user:u).order(:match_id).each do|b| %>
+                <td><%= b.local_score.to_s + ' - ' +  b.visit_score.to_s %></td>
+            <%end  %>
+          </tr>
 
-      <%end  %>
+          <%end  %>
 
-      </tbody>
-    </table>
-  </div>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
 
 </div>
