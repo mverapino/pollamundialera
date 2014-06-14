@@ -1,10 +1,11 @@
+<% flash.each do |key, value| %>
+    <div class="<%= flash_class(key) %>">
+      <%= value %>
+    </div>
+<% end %>
 <div class="row-fluid clearfix">
   <div class="col-md-12 column">
-    <% flash.each do |key, value| %>
-      <div class="<%= flash_class(key) %>">
-        <%= value %>
-      </div>
-    <% end %>
+
 
     <h2>Responde las preguntas</h2>
     <p>Se cerraron las respuestas</p>
@@ -90,7 +91,7 @@
 
         <% end %>
         <%= form_for q[1],html:{class:'form-horizontal visible-xs',role:'form'} do |a|%>
-            <div class="form-group visible-xs <%= q[0].time.to_date == Time.now.to_date ? 'has-warning':''  %>">
+            <div class="form-group visible-xs <%= q[0].time.to_date == Time.now.to_date ? 'bg-warning':''  %>">
               <!--<div class="col-md-6 column">-->
               <div class="col-xs-12 col-bet">
                 <label class="control-label "><%= q[0].time.to_s(:match_date_time) %></label></p>
