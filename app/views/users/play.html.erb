@@ -1,10 +1,12 @@
+<% flash.each do |key, value| %>
+    <div class="<%= flash_class(key) %>">
+      <%= value %>
+    </div>
+<% end %>
+
 <div class="row-fluid clearfix hidden">
   <div class="col-md-12 column">
-    <% flash.each do |key, value| %>
-      <div class="<%= flash_class(key) %>">
-        <%= value %>
-      </div>
-    <% end %>
+
 
     <h2>Responde las preguntas</h2>
     <p>Se cerraron las respuestas</p>
