@@ -15,7 +15,7 @@
         <tbody>
         <% @users.each do |user| %>
             <tr>
-              <td><%= user[0].name %></td>
+              <td><%= link_to user[0].name, user[0]%></td>
               <td><%=  user[1].local_score.to_s + ' - ' + user[1].visit_score.to_s %></td>
             </tr>
         <% end %>
