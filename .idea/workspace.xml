@@ -27,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="694" selection-end="694" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1170">
+            <state line="20" column="0" selection-start="890" selection-end="890" vertical-scroll-proportion="0.56179774" vertical-offset="0" max-vertical-offset="1155">
               <folding />
             </state>
           </provider>
@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="play.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="play.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/users/play.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="9" selection-start="114" selection-end="114" vertical-scroll-proportion="0.10968921" vertical-offset="0" max-vertical-offset="2175">
+            <state line="53" column="33" selection-start="2311" selection-end="2374" vertical-scroll-proportion="-33.125" vertical-offset="0" max-vertical-offset="2145">
               <folding />
             </state>
           </provider>
@@ -174,8 +174,8 @@
         <option value="$PROJECT_DIR$/app/views/bets/all_bets.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/users.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/play.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -966,16 +966,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/play.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="694" selection-end="694" vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1170">
+        <state line="53" column="33" selection-start="2311" selection-end="2374" vertical-scroll-proportion="-33.125" vertical-offset="0" max-vertical-offset="2145">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/play.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="9" selection-start="114" selection-end="114" vertical-scroll-proportion="0.10968921" vertical-offset="0" max-vertical-offset="2175">
+        <state line="20" column="0" selection-start="890" selection-end="890" vertical-scroll-proportion="0.56179774" vertical-offset="0" max-vertical-offset="1155">
           <folding />
         </state>
       </provider>
