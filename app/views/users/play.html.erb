@@ -45,38 +45,71 @@
     <% end  %>
   </div>
 </div>
-<div class="row clearfix">
+<div class="row-fluid clearfix">
   <div class="col-md-12 column">
     <h2>Apuesta a los resultados</h2>
     <%  @bets.each do |q|%>
-      <div class="row clearfix">
-        <%= form_for q[1],html:{class:'form-horizontal',role:'form'} do |a|%>
-          <div class="form-group">
+      <div class="row-fluid  row-bet clearfix">
+        <%= form_for q[1],html:{class:'form-horizontal hidden-xs',role:'form'} do |a|%>
+          <div class="form-group ">
             <!--<div class="col-md-6 column">-->
-            <%= a.label(:time, q[0].time,class:'control-label col-md-2 col-sm-2 col-xs-2') %>
-            <%= a.label(:local, q[0].local.name,class:'control-label col-md-2 col-sm-2 col-xs-2') %>
+            <%= a.label(:time, q[0].time.to_s(:match_date_time),class:'control-label col-sm-2') %>
+            <%= a.label(:local, q[0].local.name,class:'control-label col-sm-2') %>
             <!--</div>-->
-            <div class="col-md-2 col-sm-2 col-xs-2 column">
+            <div class="col-sm-2 column ">
 
               <%= a.number_field(:local_score, class:'form-control',min:'0') %>
             </div>
-            <%= a.label(:visit, q[0].visit.name,class:'control-label col-md-2  col-sm-2 col-xs-2 ') %>
-            <div class="col-md-2  col-sm-2 col-xs-2 column">
+            <%= a.label(:visit, q[0].visit.name,class:'control-label col-sm-2') %>
+            <div class="col-sm-2 column">
 
               <%= a.number_field(:visit_score, class:'form-control',min:'0') %>
             </div>
 
-            <div class="col-md-2  col-sm-2 col-xs-2 column">
+            <div class="col-sm-2 column">
               <%= a.hidden_field(:match_id) %>
               <%if q[1].new_record?  %>
-                  <%= a.submit('Guardar',class:'btn btn.default')%>
+                  <%= a.submit('Guardar',class:'btn btn-default')%>
               <% else  %>
-                  <%= a.submit('Actualizar',class:'btn btn.default')%>
+                  <%= a.submit('Actualizar',class:'btn btn-default')%>
                   <span class="glyphicon glyphicon-ok"></span>
 
               <% end %>
             </div>
           </div>
+
+        <% end %>
+        <%= form_for q[1],html:{class:'form-horizontal visible-xs',role:'form'} do |a|%>
+            <div class="form-group visible-xs ">
+              <!--<div class="col-md-6 column">-->
+              <div class="col-xs-2 col-bet col-xs">
+                <p><label class="control-label"><%= q[0].time.to_s(:match_date) %></label></p>
+                <p><label class="control-label"><%= q[0].time.to_s(:match_time) %></label></p>
+              </div>
+              <div class="col-xs-4 col-bet col-xs">
+                <p><label class="control-label"><%= q[0].local.name %></label></p>
+                <p><%= a.number_field(:local_score, class:'form-control',min:'0') %></p>
+              </div>
+              <div class="col-xs-4 col-bet col-xs">
+                <p><label class="control-label"><%= q[0].visit.name %></label></p>
+                <p><%= a.number_field(:visit_score, class:'form-control',min:'0') %></p>
+              </div>
+
+              <div class="col-xs-2 col-bet col-xs">
+                <%= a.hidden_field(:match_id) %>
+                <%if q[1].new_record?  %>
+                    <%= a.button(class:'btn btn-large btn-default') do%>
+                        <span class="glyphicon glyphicon-floppy-disk"></span>
+                    <%end  %>
+                <% else  %>
+                    <%= a.button(class:'btn btn-large btn-default') do%>
+                        <span class="glyphicon glyphicon-refresh"></span>
+                    <%end  %>
+
+
+                <% end %>
+              </div>
+            </div>
 
         <% end %>
       </div>
