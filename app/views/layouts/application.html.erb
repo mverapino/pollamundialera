@@ -35,9 +35,9 @@
             <li class="<%= is_active('all_bets')%>">
               <%= link_to 'Todas las apuestas',all_bets_path %>
             </li>
-            <!--<li class="<%= is_active('resultados')%>">-->
-              <!--<a href="#">Resultados</a>-->
-            <!--</li>-->
+            <li class="<%= is_active('results')%>">
+              <%= link_to 'Resultados',results_path %>
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>

@@ -15,6 +15,7 @@ Worldcup::Application.routes.draw do
   get 'ranking'=> 'users#index'
   get 'next_bets' => 'bets#next_bets'
   get 'all_bets' =>'bets#all_bets'
+  get 'results'=> 'matches#results'
 
   #post 'answers'=> 'answers#create'
   #put 'answers/:id' => 'answers#update'
