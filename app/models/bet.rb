@@ -2,6 +2,7 @@ class Bet < ActiveRecord::Base
   before_save :check_time
   belongs_to :match
   belongs_to :user
+  validates_uniqueness_of :match_id, :scope => :user_id
 
   def points
     if self.match.local_score.nil? || self.match.visit_score.nil?

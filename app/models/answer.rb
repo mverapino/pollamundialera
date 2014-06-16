@@ -2,6 +2,8 @@ class Answer < ActiveRecord::Base
   before_save :check_time
   belongs_to :user
   belongs_to :prediction
+  validates_uniqueness_of :prediction_id, :scope => :user_id
+
   def get_answer
      t=Team.where( id:self.answer)
      t.empty? ? self.answer: t.name
