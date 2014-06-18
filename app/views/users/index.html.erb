@@ -13,6 +13,7 @@
         </thead>
 
         <tbody>
+        <% last_index =nil %>
         <% @users.each_with_index do |user,i| %>
           <tr>
             <td><%= (i+1) %></td>

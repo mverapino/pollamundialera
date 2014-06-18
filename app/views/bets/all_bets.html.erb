@@ -28,7 +28,9 @@
 
             <% Match.all.order(:id).each do|m| %>
                 <% b=Bet.where(match:m,user:u).first %>
-                <td><%= b.nil? ? ' - ' : b.local_score.to_s + ' - ' +  b.visit_score.to_s %></td>
+                <td class="bet <%= bet_color(b) %>">
+                  <%= b.nil? ? ' - ' : b.local_score.to_s + ' - ' +  b.visit_score.to_s %>
+                </td>
             <%end  %>
 
           </tr>
