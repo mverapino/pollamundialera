@@ -14,11 +14,21 @@
 
         <tbody>
         <% last_index =nil %>
+        <% last_tp =nil %>
         <% @users.each_with_index do |user,i| %>
           <tr>
-            <td><%= (i+1) %></td>
+            <% current_tp = user.total_points  %>
+            <% if last_index.nil? || last_tp != current_tp %>
+                <td><%= (i+1) %></td>
+                <% last_index = i+1  %>
+            <% else %>
+                <td><%= (last_index) %></td>
+                <% last_index = last_index  %>
+            <% end  %>
+            <% last_tp = user.total_points  %>
             <td><%= link_to user.name, user%></td>
-            <td><%= user.total_points %></td>
+            <td><%= last_tp %></td>
+            <% last_tp = current_tp %>
           </tr>
         <% end %>
         </tbody>

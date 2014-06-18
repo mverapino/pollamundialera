@@ -12,7 +12,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/worldcup@Development__worldcup.coverage" NAME="Development: worldcup Coverage Results" MODIFIED="1403053033279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="worldcup" />
+    <SUITE FILE_PATH="coverage/worldcup@Development__worldcup.coverage" NAME="Development: worldcup Coverage Results" MODIFIED="1403127417585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="worldcup" />
     <SUITE FILE_PATH="coverage/worldcup@Rails_console__worldcup.coverage" NAME="Rails console: worldcup Coverage Results" MODIFIED="1403052894536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="worldcup" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="555">
+            <state line="29" column="35" selection-start="912" selection-end="912" vertical-scroll-proportion="0.74489796" vertical-offset="216" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
@@ -63,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bets.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bets.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bets.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="255" selection-end="262" vertical-scroll-proportion="0.45918366" vertical-offset="0" max-vertical-offset="294">
+            <state line="9" column="27" selection-start="255" selection-end="262" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
@@ -174,10 +174,10 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/models/bet.rb" />
         <option value="$PROJECT_DIR$/app/models/answer.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/bets_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/bets/all_bets.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bets.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
       </list>
     </option>
   </component>
@@ -999,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1200">
@@ -1057,7 +1050,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bets.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="255" selection-end="262" vertical-scroll-proportion="0.45918366" vertical-offset="0" max-vertical-offset="294">
+        <state line="9" column="27" selection-start="255" selection-end="262" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="35" selection-start="912" selection-end="912" vertical-scroll-proportion="0.74489796" vertical-offset="216" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
