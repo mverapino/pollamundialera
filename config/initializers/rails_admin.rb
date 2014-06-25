@@ -44,6 +44,17 @@ RailsAdmin.config do |config|
 
     end
   end
+  config.model 'Prediction' do
+    list do
+      field :id
+      field :question
+      field :real_answer
+      field :question_type
+      field :group
+      field :points
+
+    end
+  end
   config.model 'Bet' do
     list do
       field :id
