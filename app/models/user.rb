@@ -19,4 +19,7 @@ class User < ActiveRecord::Base
     self.answers.each { |a| sum+=a.points }
     sum
   end
+  def is_admin?
+    id==11
+  end
 end
