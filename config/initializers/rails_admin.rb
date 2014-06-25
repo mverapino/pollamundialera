@@ -51,6 +51,7 @@ RailsAdmin.config do |config|
       field :user
       field :display_bet
       field :updated_at
+      field :points
 
     end
   end
@@ -61,7 +62,20 @@ RailsAdmin.config do |config|
       field :prediction
       field :prediction_question
       field :get_answer
+      field :points
       field :updated_at
+
+    end
+  end
+  config.model 'User' do
+    list do
+      field :id
+      field :name
+      field :email
+      field :total_points
+      field :sign_in_count
+      field :bets
+      field :answers
 
     end
   end
