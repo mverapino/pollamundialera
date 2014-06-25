@@ -31,4 +31,7 @@ class Bet < ActiveRecord::Base
     end
       ls + ' - ' + vs
   end
+  def display_match
+    match.vs_title
+  end
 end

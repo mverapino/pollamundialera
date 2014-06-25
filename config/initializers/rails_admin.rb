@@ -44,4 +44,25 @@ RailsAdmin.config do |config|
 
     end
   end
+  config.model 'Bet' do
+    list do
+      field :id
+      field :match
+      field :user
+      field :display_bet
+      field :updated_at
+
+    end
+  end
+  config.model 'Answer' do
+    list do
+      field :id
+      field :user
+      field :prediction
+      field :prediction_question
+      field :get_answer
+      field :updated_at
+
+    end
+  end
 end

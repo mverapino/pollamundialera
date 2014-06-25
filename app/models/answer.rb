@@ -5,8 +5,13 @@ class Answer < ActiveRecord::Base
   validates_uniqueness_of :prediction_id, :scope => :user_id
 
   def get_answer
-     t=Team.where( id:self.answer)
-     t.empty? ? self.answer: t.name
+    if prediction.question_type !=2 && !answer.nil?
+      t=Team.where( id:answer).first
+      t.nil? ? self.answer: t.name
+    else
+      answer
+    end
+
   end
   def check_time
     Time.new(2014,06,12,0) > Time.now
@@ -21,5 +26,8 @@ class Answer < ActiveRecord::Base
     else
       self.prediction.answer.to_i== self.answer.to_i ? self.prediction.points : 0
     end
+  end
+  def prediction_question
+    prediction.nil? ? nil : prediction.question
   end
 end
