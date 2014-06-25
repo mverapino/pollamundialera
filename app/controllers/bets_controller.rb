@@ -5,7 +5,7 @@ class BetsController < ApplicationController
   def next_bets
     @matches=Match.where("Date(time) = ?", Date.today)
 
-    @users= User.all.map do |u|
+    @users= User.all.order(:name).map do |u|
       user_bets=[]
       @matches.each do |m|
          b =u.bets.where(match:m).first.nil? ?  Bet.new(match:m, user:u) : u.bets.where(match:m).first
@@ -17,7 +17,7 @@ class BetsController < ApplicationController
 
   end
   def all_bets
-  @users= User.all
+  @users= User.all.order(:name)
 
   end
   # POST /bets
