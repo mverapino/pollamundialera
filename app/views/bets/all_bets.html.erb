@@ -17,7 +17,6 @@
                   <p> vs</p>
                   <p><%= Team.find(m.visit).name %>  </p> </th>
             <%end  %>
-            <th>Respuesta</th>
           </tr>
           </thead>
           <tbody>
@@ -29,7 +28,7 @@
             <% Match.all.order(:id).each do|m| %>
                 <% b=Bet.where(match:m,user:u).first %>
                 <td class="bet <%= bet_color(b) %>">
-                  <%= b.nil? ? ' - ' : b.local_score.to_s + ' - ' +  b.visit_score.to_s %>
+                  <%= b.nil? ? ' - ' : b.display_bet %>
                 </td>
             <%end  %>
 

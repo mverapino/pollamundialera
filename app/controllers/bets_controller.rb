@@ -3,11 +3,17 @@ class BetsController < ApplicationController
   before_action :authenticate_user!
 
   def next_bets
-    @match=Match.where("time > ?", (Time.now - 3600*2)).first
-    @local = Team.find(@match.local.id)
-    @visit = Team.find(@match.visit.id)
-    @users= User.all.map{|u| [u,u.bets.where(match:@match).first.nil? ?  Bet.new(match:@match, user:u) : u.bets.where(match:@match).first]}
-    @bets=Bet.where(match_id: @match.id)
+    @matches=Match.where("Date(time) = ?", Date.today)
+
+    @users= User.all.map do |u|
+      user_bets=[]
+      @matches.each do |m|
+         b =u.bets.where(match:m).first.nil? ?  Bet.new(match:m, user:u) : u.bets.where(match:m).first
+
+        user_bets<< b
+      end
+      [u,user_bets]
+    end
 
   end
   def all_bets

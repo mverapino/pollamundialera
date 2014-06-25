@@ -20,4 +20,15 @@ class Bet < ActiveRecord::Base
   def check_time
     self.match.time> Time.now
   end
+  def display_bet
+
+    if self.match.time > Time.now
+     ls = local_score.nil? ? '' : '?'
+     vs = visit_score.nil? ? '' : '?'
+    else
+      ls = local_score.nil? ? '' : local_score.to_s
+      vs = visit_score.nil? ? '' : visit_score.to_s
+    end
+      ls + ' - ' + vs
+  end
 end
