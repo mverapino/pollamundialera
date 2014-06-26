@@ -43,6 +43,13 @@ RailsAdmin.config do |config|
       field :time
 
     end
+    edit do
+      field :time
+      field :local
+      field :visit
+      field :local_score
+      field :visit_score
+    end
   end
   config.model 'Prediction' do
     list do

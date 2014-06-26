@@ -1,8 +1,11 @@
 class Match < ActiveRecord::Base
-  belongs_to :visit,   class_name: 'Team', foreign_key: :visit
-  belongs_to :local,   class_name: 'Team', foreign_key: :local
+  validates_presence_of :visit,:local
+  belongs_to :visit,   class_name: 'Team', foreign_key: :visit_id
+  belongs_to :local,   class_name: 'Team', foreign_key: :local_id
   has_many :bets
   def vs_title
-    Team.find(local).name + ' - ' + Team.find(visit).name
+    local.name + ' - ' + visit.name
   end
+
+
 end
