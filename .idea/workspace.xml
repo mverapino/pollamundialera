@@ -30,7 +30,7 @@
       <file leaf-file-name="_form_filtering_select.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rails_admin-0.6.1/app/views/rails_admin/main/_form_filtering_select.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="645">
+            <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
@@ -48,7 +48,16 @@
       <file leaf-file-name="rails_admin.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="18" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1590">
+            <state line="47" column="18" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1590">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="team.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/team.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="52" selection-start="162" selection-end="162" vertical-scroll-proportion="0.04341534" vertical-offset="0" max-vertical-offset="691">
               <folding />
             </state>
           </provider>
@@ -57,16 +66,16 @@
       <file leaf-file-name="object.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/rubystubs21/object.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="904" column="39" selection-start="32178" selection-end="32178" vertical-scroll-proportion="-5.1538463" vertical-offset="13426" max-vertical-offset="14580">
+            <state line="904" column="39" selection-start="32178" selection-end="32178" vertical-scroll-proportion="0.0" vertical-offset="13426" max-vertical-offset="14580">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="match.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="match.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/match.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.40677965" vertical-offset="0" max-vertical-offset="295">
+            <state line="6" column="35" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -84,7 +93,7 @@
       <file leaf-file-name="20140626015628_change_match_visit_local.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20140626015628_change_match_visit_local.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="43" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="3" column="43" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="195">
               <folding />
             </state>
           </provider>
@@ -93,7 +102,7 @@
       <file leaf-file-name="answer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/answer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="6" selection-start="241" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+            <state line="8" column="6" selection-start="241" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -102,16 +111,7 @@
       <file leaf-file-name="_form_field.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rails_admin-0.6.1/app/views/rails_admin/main/_form_field.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="105">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form_filtering_multiselect.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rails_admin-0.6.1/app/views/rails_admin/main/_form_filtering_multiselect.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="795">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
               <folding />
             </state>
           </provider>
@@ -170,7 +170,6 @@
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/team.rb" />
         <option value="$PROJECT_DIR$/app/models/bet.rb" />
         <option value="$PROJECT_DIR$/app/models/answer.rb" />
         <option value="$PROJECT_DIR$/app/models/prediction.rb" />
@@ -178,6 +177,7 @@
         <option value="$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.2/lib/active_support/callbacks.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140626015628_change_match_visit_local.rb" />
         <option value="$PROJECT_DIR$/app/models/match.rb" />
+        <option value="$PROJECT_DIR$/app/models/team.rb" />
       </list>
     </option>
   </component>
@@ -221,7 +221,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -376,6 +375,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -643,7 +643,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24894811" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30358565" sideWeight="0.49593496" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.50269544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50269544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30190176" sideWeight="0.50406504" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3951613" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32749325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -674,9 +674,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24894811" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30190176" sideWeight="0.49839228" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -733,23 +733,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="2932" selection-end="2944" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1800">
-          <folding />
-        </state>
+        <state line="32" column="0" selection-start="2932" selection-end="2944" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1800" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/matches_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="86" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
+        <state line="2" column="24" selection-start="86" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1215">
-          <folding />
-        </state>
+        <state line="32" column="0" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="1215" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/bets/next_bets.html.erb">
@@ -761,16 +755,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/bets/all_bets.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="21" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="750">
-          <folding />
-        </state>
+        <state line="32" column="21" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="750" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/bets_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="31" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
-          <folding />
-        </state>
+        <state line="19" column="31" selection-start="511" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
@@ -783,18 +773,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="17" selection-start="1510" selection-end="1510" vertical-scroll-proportion="-19.666666" vertical-offset="398" max-vertical-offset="1065">
-          <folding>
-            <marker date="1403705486000" expanded="true" signature="-1:-1" placeholder="do ... end" />
-            <marker date="1403705486000" expanded="true" signature="-1:-1" placeholder="if ... end" />
-            <marker date="1403705486000" expanded="true" signature="-1:-1" placeholder="if ... end" />
-            <marker date="1403705486000" expanded="true" signature="-1:-1" placeholder="do ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/team.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
       </provider>
@@ -808,16 +786,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/prediction.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="7" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
+        <state line="8" column="7" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/play.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="93" selection-start="4098" selection-end="4098" vertical-scroll-proportion="-49.375" vertical-offset="210" max-vertical-offset="2160">
-          <folding />
-        </state>
+        <state line="93" column="93" selection-start="4098" selection-end="4098" vertical-scroll-proportion="-49.375" vertical-offset="210" max-vertical-offset="2160" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
@@ -843,9 +817,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rails_admin-0.6.1/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="305">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="305" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.2/lib/active_record/associations.rb">
@@ -857,9 +829,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.2/lib/active_record/associations/builder/association.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1710">
-          <folding />
-        </state>
+        <state line="77" column="0" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1710" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rails_admin-0.6.1/app/controllers/rails_admin/main_controller.rb">
@@ -878,9 +848,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="615">
-          <folding />
-        </state>
+        <state line="30" column="0" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" vertical-offset="297" max-vertical-offset="615" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rails_admin-0.6.1/lib/rails_admin/config/actions/new.rb">
@@ -892,37 +860,27 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="3345">
-          <folding />
-        </state>
+        <state line="17" column="0" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="3345" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/etag.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.33333334" vertical-offset="254" max-vertical-offset="1050">
-          <folding />
-        </state>
+        <state line="24" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="0.33333334" vertical-offset="254" max-vertical-offset="1050" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/warden-1.2.3/lib/warden/manager.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.33114755" vertical-offset="544" max-vertical-offset="2130">
-          <folding />
-        </state>
+        <state line="43" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.33114755" vertical-offset="544" max-vertical-offset="2130" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rack-pjax-0.7.0/lib/rack/pjax.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="183" selection-end="183" vertical-scroll-proportion="0.31085044" vertical-offset="74" max-vertical-offset="870">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="183" selection-end="183" vertical-scroll-proportion="0.31085044" vertical-offset="74" max-vertical-offset="870" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.31085044" vertical-offset="1079" max-vertical-offset="2580">
-          <folding />
-        </state>
+        <state line="79" column="0" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.31085044" vertical-offset="1079" max-vertical-offset="2580" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.2/lib/action_controller/metal.rb">
@@ -934,9 +892,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.30792683" vertical-offset="574" max-vertical-offset="3030">
-          <folding />
-        </state>
+        <state line="45" column="0" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.30792683" vertical-offset="574" max-vertical-offset="3030" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb">
@@ -948,9 +904,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.31085044" vertical-offset="359" max-vertical-offset="1680">
-          <folding />
-        </state>
+        <state line="31" column="0" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.31085044" vertical-offset="359" max-vertical-offset="1680" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.2/lib/active_support/callbacks.rb">
@@ -962,16 +916,12 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/conditionalget.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0" vertical-offset="262" max-vertical-offset="1095">
-          <folding />
-        </state>
+        <state line="25" column="0" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0" vertical-offset="262" max-vertical-offset="1095" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rails_admin-0.6.1/app/views/rails_admin/main/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="328">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="328" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rails_admin-0.6.1/app/views/rails_admin/main/_form_nested_one.html.haml">
@@ -1011,7 +961,7 @@
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs21/object.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="904" column="39" selection-start="32178" selection-end="32178" vertical-scroll-proportion="-5.1538463" vertical-offset="13426" max-vertical-offset="14580">
+        <state line="904" column="39" selection-start="32178" selection-end="32178" vertical-scroll-proportion="0.0" vertical-offset="13426" max-vertical-offset="14580">
           <folding />
         </state>
       </provider>
@@ -1039,7 +989,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rails_admin-0.6.1/app/views/rails_admin/main/_form_filtering_select.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="645">
+        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="645">
           <folding />
         </state>
       </provider>
@@ -1047,13 +997,6 @@
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.1.1/gems/rails_admin-0.6.1/lib/rails_admin/config/fields/types/belongs_to_association.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0" vertical-offset="424" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="18" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1590">
           <folding />
         </state>
       </provider>
@@ -1067,7 +1010,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/match.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.40677965" vertical-offset="0" max-vertical-offset="295">
+        <state line="6" column="35" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/rails_admin.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="18" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1590">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/team.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="52" selection-start="162" selection-end="162" vertical-scroll-proportion="0.04341534" vertical-offset="0" max-vertical-offset="691">
           <folding />
         </state>
       </provider>
