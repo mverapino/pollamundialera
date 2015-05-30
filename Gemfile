@@ -41,7 +41,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'therubyracer'  # If using Ruby
+gem 'therubyracer', '~> 0.10.2'  # If using Ruby
 gem 'less-rails-bootstrap'
 #gem 'bootstrap-glyphicons'
 # Use ActiveModel has_secure_password
