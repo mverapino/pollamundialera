@@ -57,7 +57,7 @@ Match.create!(local: Team.find_by(name:'Uruguay'), visit:Team.find_by(name:'Jama
 Match.create!(local: Team.find_by(name:'Argentina'), visit:Team.find_by(name:'Paraguay'),         time:Time.new(2015,6,13,18))
 Match.create!(local: Team.find_by(name:'Paraguay'), visit:Team.find_by(name:'Jamaica'),         time:Time.new(2015,6,16,18))
 Match.create!(local: Team.find_by(name:'Argentina'), visit:Team.find_by(name:'Uruguay'),         time:Time.new(2015,6,16,20))
-Match.create!(local: Team.find_by(name:'Uruguay'), visit:Team.find_by(name:'Para'),         time:Time.new(2015,6,20,16))
+Match.create!(local: Team.find_by(name:'Uruguay'), visit:Team.find_by(name:'Paraguay'),         time:Time.new(2015,6,20,16))
 Match.create!(local: Team.find_by(name:'Argentina'), visit:Team.find_by(name:'Jamaica'),         time:Time.new(2015,6,20,18))
 
 Match.create!(local: Team.find_by(name:'Colombia'), visit:Team.find_by(name:'Venezuela'),         time:Time.new(2015,6,14,16))
