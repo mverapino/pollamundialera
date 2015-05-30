@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140626015628) do
+ActiveRecord::Schema.define(version: 20150530173636) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20140626015628) do
   create_table "answers", force: true do |t|
     t.integer  "user_id"
     t.integer  "prediction_id"
-    t.string   "answer"
+    t.string   "answer",        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,10 +28,10 @@ ActiveRecord::Schema.define(version: 20140626015628) do
   add_index "answers", ["user_id"], name: "index_answers_on_user_id", using: :btree
 
   create_table "bets", force: true do |t|
-    t.integer  "match_id"
-    t.integer  "user_id"
-    t.integer  "local_score"
-    t.integer  "visit_score"
+    t.integer  "match_id",    null: false
+    t.integer  "user_id",     null: false
+    t.integer  "local_score", null: false
+    t.integer  "visit_score", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -64,18 +64,20 @@ ActiveRecord::Schema.define(version: 20140626015628) do
     t.string   "group"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "favorite",   default: false
   end
 
   create_table "users", force: true do |t|
-    t.string   "name"
+    t.string   "name",                                   null: false
+    t.boolean  "paid",                   default: false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "email",                  default: "",    null: false
+    t.string   "encrypted_password",     default: "",    null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",          default: 0,     null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
