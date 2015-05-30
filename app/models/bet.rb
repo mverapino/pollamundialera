@@ -12,7 +12,7 @@ class Bet < ActiveRecord::Base
     elsif (self.local_score  > self.visit_score && self.match.local_score  > self.match.visit_score)||
           (self.local_score  < self.visit_score && self.match.local_score  < self.match.visit_score)||
           (self.local_score == self.visit_score && self.match.local_score == self.match.visit_score)
-      1
+      2
     else
       0
     end
