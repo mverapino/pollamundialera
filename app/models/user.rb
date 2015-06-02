@@ -22,4 +22,7 @@ class User < ActiveRecord::Base
   def is_admin?
     id==11
   end
+  def is_champ?
+    id==3
+  end
 end
