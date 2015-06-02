@@ -27,7 +27,7 @@
             <% end  %>
             <% last_tp = user.total_points  %>
             <td><%= link_to user.name, user%>
-            <%= image_tag("corona.jpg") if user.is_champ?  %> : </td>
+            <%= image_tag("corona.jpg") if user.is_champ?  %> </td>
             <td><%= last_tp %></td>
             <% last_tp = current_tp %>
           </tr>
