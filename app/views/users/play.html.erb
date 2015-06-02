@@ -24,6 +24,8 @@
                   <%= a.text_field(:answer, class:'form-control') %>
                 <% elsif q[0].question_type == 3%>
                   <%= a.select(:answer, options_for_select(select_team_options('CHILE'), q[1].answer), class:'form-control') %>
+                <% elsif q[0].question_type == 4%>
+                  <%= a.select(:answer, options_for_select(select_team_options('Revelacion'), q[1].answer), class:'form-control') %>
                 <% else%>
                   <%= a.select(:answer, options_for_select(select_team_options(q[0].group), q[1].answer), class:'form-control') %>
                 <% end  %>
