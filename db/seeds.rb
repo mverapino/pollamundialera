@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-#User.create!(email: 'mverapino@gmail.com', password:'alejandro5', encrypted_password: '$2a$10$2K37CPgC5zKCdTDzFwbVDOBXdNt2wAgIWVVOKBJX219Giivq0jSqm', name: 'Mauricio Vera') #.confirm!
+User.create!(id:11,email: 'mverapino@gmail.com', password:'alejandro5', encrypted_password: '$2a$10$2K37CPgC5zKCdTDzFwbVDOBXdNt2wAgIWVVOKBJX219Giivq0jSqm', name: 'Mauricio Vera') #.confirm!
 #User.create!(email: 'testing@gmail.com',password:'testing1', encrypted_password: '$2a$10$WzjBLRDsxnpMYmM.iDFpJ.iA/Uf6LxqKc2XbclaKu7jYurwjd4WWy', name: 'Test') #.confirm!
 Prediction.create!(question_type:1 , question:'¿Quién será el campeón?', points:5)
 Prediction.create!(question_type:1 , question:'¿Quién será el sub-campeón?', points:5)
@@ -22,6 +22,7 @@ Prediction.create!(question_type:4 , group:'C' , question:'¿Quién será el gan
 Prediction.create!(question_type:4 , group:'C' , question:'¿Quién será el segundo del grupo C?', points:4)
 Prediction.create!(question_type:1 , question:'¿Quién será el primer mejor tercer equipo?', points:4)
 Prediction.create!(question_type:1 , question:'¿Quién será el segundo mejor tercer equipo?', points:4	)
+Prediction.create!(question_type:5 , question:'¿Equipo Revelacion?', points:4	)
 
 Team.create!(group:'A' ,name: 'Chile', favorite: true)
 Team.create!(group:'A' ,name: 'México')
