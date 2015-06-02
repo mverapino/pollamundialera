@@ -9,33 +9,40 @@
             Esta va a ser la aplicacion que vamos a ocupar para polla de la Copa América 2015
         </p>
         <p>
-
-          <a class="btn btn-primary btn-large" href="<%= new_user_session_path %>">Ingresa</a>
+          <% if user_signed_in? %>
+            <%= link_to 'Jugar', new_user_session_path, class: 'btn btn-primary btn-large'%>
+          <% else %>
+            
+            <!-- <a class="btn btn-primary btn-large" href="<%= new_user_session_path %>">Ingresa</a> -->
+              <%= link_to 'Ingresa', new_user_session_path, class: 'btn btn-primary btn-large'%>
+            
+          <% end %>
         </p>
       </div>
     </div>
   </div>
-<div class="row clearfix">
-  <div class="col-md-6 column">
+<div class="row clearfix" style=" padding-left: 10px; padding-right: 10px;">
+  <div class="col-md-6 column" >
     <h2>
-      Heading
+      Bases
     </h2>
     <p>
-      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      Aqui se puede ver las bases para la polla de la copa america 2015
     </p>
     <p>
-      <a class="btn" href="#">View details »</a>
+      <%= link_to 'Ver Bases', bases_path, class: 'btn'%>
+
     </p>
   </div>
-  <div class="col-md-6 column">
+  <div class="col-md-6 column" >
     <h2>
-      Heading
+      Tontero Campeón
     </h2>
     <p>
-      Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      Montero fue el campeon de la ultima polla. Esperamos que para esta ocación haga trampa.
     </p>
     <p>
-      <a class="btn" href="#">View details »</a>
+      
     </p>
   </div>
 </div>
