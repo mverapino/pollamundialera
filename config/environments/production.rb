@@ -73,7 +73,7 @@ Worldcup::Application.configure do
   config.action_mailer.default :charset => "utf-8"
 
   config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
+  address: "smtp.mandrillapp.com",
   port: 587,
   domain: ENV["GMAIL_DOMAIN"],
   authentication: "plain",
