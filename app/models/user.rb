@@ -14,15 +14,23 @@ class User < ActiveRecord::Base
   #   end
   #end
   def total_points
-    sum = 0
-    self.bets.each { |b| sum+=b.points }
-    self.answers.each { |a| sum+=a.points }
-    sum
+    if self.has_paid?
+      sum = 0
+      self.bets.each { |b| sum+=b.points }
+      self.answers.each { |a| sum+=a.points }
+      sum
+    else
+      -1
+    end
   end
+
   def is_admin?
     id==11
   end
   def is_champ?
     id==3
+  end
+  def has_paid?
+    self.paid
   end
 end

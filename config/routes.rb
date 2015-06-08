@@ -5,8 +5,7 @@ Worldcup::Application.routes.draw do
   resources :bets
 
   devise_for :users
-  resources :users
-
+  # resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -18,6 +17,13 @@ Worldcup::Application.routes.draw do
   get 'all_bets' =>'bets#all_bets'
   get 'results'=> 'matches#results'
   get 'bases' => 'static_pages#bases'
+
+
+
+  resources :users,:constraints => {:id => /\d+/}, :only => [:show,:edit]
+
+
+
   #post 'answers'=> 'answers#create'
   #put 'answers/:id' => 'answers#update'
   #post 'bets'=> 'bets#create'

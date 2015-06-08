@@ -18,7 +18,9 @@
         <% @users.each_with_index do |user,i| %>
           <tr>
             <% current_tp = user.total_points  %>
-            <% if last_index.nil? || last_tp != current_tp %>
+            <% if current_tp < 0 %>
+              <td style="background-color: red;">NP</td>
+            <% elsif last_index.nil? || last_tp != current_tp %>
                 <td><%= (i+1) %></td>
                 <% last_index = i+1  %>
             <% else %>

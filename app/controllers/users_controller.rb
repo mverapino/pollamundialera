@@ -27,6 +27,10 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  # GET /users/1/editcurrent_user.answers.sort_by(:prediction_id)
+  def edit
+    @user=current_user
+  end
   # POST /users
   # POST /users.json
   def create

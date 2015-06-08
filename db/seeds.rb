@@ -22,7 +22,7 @@ Prediction.create!(question_type:4 , group:'C' , question:'¿Quién será el gan
 Prediction.create!(question_type:4 , group:'C' , question:'¿Quién será el segundo del grupo C?', points:4)
 Prediction.create!(question_type:1 , question:'¿Quién será el primer mejor tercer equipo?', points:4)
 Prediction.create!(question_type:1 , question:'¿Quién será el segundo mejor tercer equipo?', points:4	)
-Prediction.create!(question_type:5 , question:'¿Equipo Revelacion?', points:4	)
+Prediction.create!(question_type:5 , question:'¿Equipo Revelacion?', points:7	)
 
 Team.create!(group:'A' ,name: 'Chile', favorite: true)
 Team.create!(group:'A' ,name: 'México')
@@ -39,7 +39,7 @@ Team.create!(group:'C' ,name: 'Venezuela')
 
 Team.create!(group:'Z' ,name: 'Unknown')
 
-Match.create!(local: Team.find_by(name:'Chile'), visit:Team.find_by(name:'Ecuador'),         time:Time.new(2015,6,11,20))
+Match.create!(local: Team.find_by(name:'Chile'), visit:Team.find_by(name:'Ecuador'),         time:Time.new(2015,6,11,20,30))
 Match.create!(local: Team.find_by(name:'México'), visit:Team.find_by(name:'Bolivia'),         time:Time.new(2015,6,12,20))
 Match.create!(local: Team.find_by(name:'Ecuador'), visit:Team.find_by(name:'Bolivia'),         time:Time.new(2015,6,15,18))
 Match.create!(local: Team.find_by(name:'Chile'), visit:Team.find_by(name:'México'),         time:Time.new(2015,6,15,20))
