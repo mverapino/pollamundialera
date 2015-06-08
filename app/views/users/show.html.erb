@@ -22,8 +22,11 @@
             <%= q[0].question %>
           </td>
           <td>
+            
             <% if q[1].nil?%>
             -
+            <% elsif q[1].check_time %>
+            ?
             <% else %>
                 <% if q[0].question_type == 1 %>
                     <%= Team.find(q[1].answer.to_i).name%>

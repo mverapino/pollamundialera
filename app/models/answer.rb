@@ -16,6 +16,8 @@ class Answer < ActiveRecord::Base
   def check_time
     Time.new(2015,06,11,0) > Time.now
   end
+
+  
   def points
     if self.prediction.question_type ==1
       self.prediction.answer.to_i== self.answer.to_i ? self.prediction.points : 0
