@@ -16,7 +16,9 @@ class Answer < ActiveRecord::Base
   def check_time
     Time.new(2015,06,11,20,30) > Time.now
   end
-
+  def self.check_time
+    Time.new(2015,06,11,20,30) > Time.now
+  end
   
   def points
     if self.prediction.question_type ==1
