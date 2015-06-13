@@ -4,7 +4,7 @@ module BetsHelper
       ''
     elsif bet.points ==3
       'full-points'
-    elsif bet.points==1
+    elsif bet.points==2
       'mid-points'
     else
       ''
