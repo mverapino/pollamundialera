@@ -1,4 +1,4 @@
-<div class="container-fluid">
+  <div class="container-fluid">
     <div class="row clearfix">
       <div class="col-md-6 column">
         <h1>Todas las Apuestas</h1>
@@ -12,7 +12,7 @@
           <tr>
             <th>Nombre</th>
 
-            <% Match.all.order(:id).each do |m| %>
+            <% @matches.each do |m| %>
                 <th><p><%= Team.find(m.local).name %></p>
                   <p> vs</p>
                   <p><%= Team.find(m.visit).name %>  </p> </th>
@@ -25,7 +25,7 @@
 
             <td><%= link_to u.name, u%></td>
 
-            <% Match.all.order(:id).each do|m| %>
+            <% @matches.each do|m| %>
                 <% b=Bet.where(match:m,user:u).first %>
                 <td class="bet <%= bet_color(b) %>">
                   <%= b.nil? ? ' - ' : b.display_bet %>

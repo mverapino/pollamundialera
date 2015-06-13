@@ -18,7 +18,7 @@ class BetsController < ApplicationController
   end
   def all_bets
   @users= User.all.order(:name)
-
+  @matches= Match.all.order(:time)
   end
   # POST /bets
   # POST /bets.json
