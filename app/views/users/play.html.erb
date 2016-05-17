@@ -5,7 +5,7 @@
 <% end %>
 <div class="row-fluid clearfix">
   <div class="col-md-12 column">
-  <h3>Hora Actual: <%=Time.now.time.to_s(:match_date_time)%></h2>
+  <h3>Hora Actual: <%=Time.now.to_s(:match_date_time)%></h2>
 
     <h2>Responde las preguntas</h2>
     <% if Answer.check_time %>
