@@ -9,6 +9,7 @@ Bundler.require(:default, Rails.env)
 module Worldcup
   class Application < Rails::Application
     config.time_zone = 'La Paz'
+    config.active_record.default_timezone = 'La Paz'
     Time::DATE_FORMATS[:match_date_time] ="%d/%m %H:%M"
     Time::DATE_FORMATS[:match_date] ="%d/%m"
     Time::DATE_FORMATS[:match_time] ="%H:%M"
