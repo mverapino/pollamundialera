@@ -27,11 +27,11 @@ Prediction.create!(question_type:1 , question:'¿Quién será el segundo mejor t
 Prediction.create!(question_type:5 , question:'¿Equipo Revelacion?', points:7	)
 
 Team.create!(group:'A' ,name: 'Estados Unidos', favorite: true)
-Team.create!(group:'A' ,name: 'Colombia')
+Team.create!(group:'A' ,name: 'Colombia', favorite: true)
 Team.create!(group:'A' ,name: 'Costa Rica')
 Team.create!(group:'A' ,name: 'Paraguay')
 Team.create!(group:'B' ,name: 'Brasil', favorite: true)
-Team.create!(group:'B' ,name: 'Ecuador', favorite: true)
+Team.create!(group:'B' ,name: 'Ecuador')
 Team.create!(group:'B' ,name: 'Haití')
 Team.create!(group:'B' ,name: 'Perú')
 Team.create!(group:'C' ,name: 'México', favorite: true)

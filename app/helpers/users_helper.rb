@@ -26,7 +26,7 @@ module UsersHelper
     elsif type =='D'
       [['Argentina', 13],['Chile', 14],['Panamá', 15],['Bolivia', 16]]
     elsif type =='Revelacion'
-      [['Costa Rica', 3],['Paraguay', 4],['Haití', 7],['Perú', 8],['Jamaica', 11],['Venezuela', 12],['Panamá', 15],['Bolivia', 16]]
+      [['Ecuador', 6],['Costa Rica', 3],['Paraguay', 4],['Haití', 7],['Perú', 8],['Jamaica', 11],['Venezuela', 12],['Panamá', 15],['Bolivia', 16]]
     else
       [['Cuarto en el grupo'],
       ['Tercero en el grupo'],
