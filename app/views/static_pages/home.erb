@@ -10,7 +10,7 @@
         </p>
         <p>
           <% if user_signed_in? %>
-            <%= link_to 'Jugar', new_user_session_path, class: 'btn btn-primary btn-large'%>
+            <%= link_to 'Jugar', play_path, class: 'btn btn-primary btn-large'%>
           <% else %>
             
             <!-- <a class="btn btn-primary btn-large" href="<%= new_user_session_path %>">Ingresa</a> -->

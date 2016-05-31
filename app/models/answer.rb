@@ -14,7 +14,7 @@ class Answer < ActiveRecord::Base
 
   end
   def check_time
-    Time.new(2015,06,11,20,30) > Time.now
+    Time.new(2016,06,3,22,30) > Time.now
   end
   def self.check_time
     Time.new(2015,06,11,20,30) > Time.now

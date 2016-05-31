@@ -25,10 +25,10 @@ class User < ActiveRecord::Base
   end
 
   def is_admin?
-    id==11
+    self.admin
   end
   def is_champ?
-    id==3
+    self.champ
   end
   def has_paid?
     self.paid

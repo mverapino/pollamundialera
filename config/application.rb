@@ -8,7 +8,7 @@ Bundler.require(:default, Rails.env)
 
 module Worldcup
   class Application < Rails::Application
-    config.time_zone = 'Buenos Aires'
+    config.time_zone = 'La Paz'
     Time::DATE_FORMATS[:match_date_time] ="%d/%m %H:%M"
     Time::DATE_FORMATS[:match_date] ="%d/%m"
     Time::DATE_FORMATS[:match_time] ="%H:%M"
