@@ -22,8 +22,8 @@ Prediction.create!(question_type:4 , group:'C' , question:'¿Quién será el gan
 Prediction.create!(question_type:4 , group:'C' , question:'¿Quién será el segundo del grupo C?', points:4)
 Prediction.create!(question_type:4 , group:'D' , question:'¿Quién será el ganador del grupo D?', points:4)
 Prediction.create!(question_type:4 , group:'D' , question:'¿Quién será el segundo del grupo D?', points:4)
-Prediction.create!(question_type:1 , question:'¿Quién será el primer mejor tercer equipo?', points:4)
-Prediction.create!(question_type:1 , question:'¿Quién será el segundo mejor tercer equipo?', points:4	)
+#Prediction.create!(question_type:1 , question:'¿Quién será el primer mejor tercer equipo?', points:4)
+#Prediction.create!(question_type:1 , question:'¿Quién será el segundo mejor tercer equipo?', points:4	)
 Prediction.create!(question_type:5 , question:'¿Equipo Revelacion?', points:7	)
 
 Team.create!(group:'A' ,name: 'Estados Unidos', favorite: true)

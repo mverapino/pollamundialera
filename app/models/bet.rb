@@ -8,7 +8,7 @@ class Bet < ActiveRecord::Base
     if self.match.local_score.nil? || self.match.visit_score.nil?
       0
     elsif self.local_score == self.match.local_score && self.visit_score == self.match.visit_score
-      3
+      4
     elsif (self.local_score  > self.visit_score && self.match.local_score  > self.match.visit_score)||
           (self.local_score  < self.visit_score && self.match.local_score  < self.match.visit_score)||
           (self.local_score == self.visit_score && self.match.local_score == self.match.visit_score)
