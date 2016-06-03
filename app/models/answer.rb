@@ -14,10 +14,10 @@ class Answer < ActiveRecord::Base
 
   end
   def check_time
-    Time.new(2016,06,3,21,30) > Time.now
+    Time.new(2016,06,3,19,30) > Time.now
   end
   def self.check_time
-    Time.new(2016,06,3,21,30) > Time.now
+    Time.new(2016,06,3,19,30) > Time.now
   end
   
   def points
